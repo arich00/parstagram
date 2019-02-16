@@ -181,7 +181,7 @@
                                 <action selector="logout:" destination="ZBH-XT-wLQ" id="z1o-YT-vn5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Picture" id="h3o-W5-XvE">
+                        <barButtonItem key="rightBarButtonItem" title="Picture" image="insta_camera_btn" id="h3o-W5-XvE">
                             <connections>
                                 <segue destination="bLV-Fi-aX9" kind="presentation" id="BFy-kE-6wV"/>
                             </connections>
@@ -286,4 +286,7 @@
             <point key="canvasLocation" x="986" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="insta_camera_btn" width="25" height="25"/>
+    </resources>
 </document>
