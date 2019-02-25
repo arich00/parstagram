@@ -1,5 +1,5 @@
 //
-//  PostCell.swift
+//  CommentCell.swift
 //  parstagram
 //
 //  Created by Alex Rich on 2/24/19.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class PostCell: UITableViewCell {
+class CommentCell: UITableViewCell {
 
-    @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var username: UILabel!
-    @IBOutlet weak var caption: UILabel!
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var comment: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "currentlyLoggedIn")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 self.usernameField.text = ""
                 self.passwordField.text = ""
@@ -48,11 +49,15 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "currentlyLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

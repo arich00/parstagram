@@ -20,7 +20,8 @@
 		EA1E4A3922149E73002470D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4A3822149E72002470D8 /* LoginViewController.swift */; };
 		EA1E4A3B22149E98002470D8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4A3A22149E98002470D8 /* FeedViewController.swift */; };
 		EA1E4A3D2214A82C002470D8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4A3C2214A82C002470D8 /* CameraViewController.swift */; };
-		EA1E4A8122188B24002470D8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4A8022188B24002470D8 /* PostCell.swift */; };
+		EAE2A49E222366B30012A4C5 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2A49D222366B30012A4C5 /* CommentCell.swift */; };
+		EAE2A4A0222367C40012A4C5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2A49F222367C40012A4C5 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,8 @@
 		EA1E4A3822149E72002470D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA1E4A3A22149E98002470D8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EA1E4A3C2214A82C002470D8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		EA1E4A8022188B24002470D8 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EAE2A49D222366B30012A4C5 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		EAE2A49F222367C40012A4C5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		F4FE80FF6594F30FC37E6929 /* Pods-parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-parstagram/Pods-parstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +156,8 @@
 				EA1E4A3822149E72002470D8 /* LoginViewController.swift */,
 				EA1E4A3A22149E98002470D8 /* FeedViewController.swift */,
 				EA1E4A3C2214A82C002470D8 /* CameraViewController.swift */,
-				EA1E4A8022188B24002470D8 /* PostCell.swift */,
+				EAE2A49D222366B30012A4C5 /* CommentCell.swift */,
+				EAE2A49F222367C40012A4C5 /* PostCell.swift */,
 			);
 			path = parstagram;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -329,6 +333,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE2A4A0222367C40012A4C5 /* PostCell.swift in Sources */,
 				EA1E4A3922149E73002470D8 /* LoginViewController.swift in Sources */,
 				EA1E4A3D2214A82C002470D8 /* CameraViewController.swift in Sources */,
 				EA1E4A0D22123AFD002470D8 /* ViewController.swift in Sources */,
 				EA1E4A3B22149E98002470D8 /* FeedViewController.swift in Sources */,
 				EA1E4A0B22123AFD002470D8 /* AppDelegate.swift in Sources */,
-				EA1E4A8122188B24002470D8 /* PostCell.swift in Sources */,
+				EAE2A49E222366B30012A4C5 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
